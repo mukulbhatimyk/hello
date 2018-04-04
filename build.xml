@@ -44,7 +44,7 @@
     </fileset>
   </path>
 
-  <target name="all" depends="clean,compile,sonar,dist"
+  <target name="all" depends="clean,compile,dist"
           description="Clean work dirs, then compile and create a WAR, and run sonarqube analysis"/>
 
   <target name="clean"
