@@ -9,7 +9,7 @@ pipeline {
 
 	stage{'Build'} {
 	
-	ant all
+	ant compile
 	}
 }
 	
