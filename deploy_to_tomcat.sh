@@ -2,7 +2,7 @@
 
 TOMCAT_HOME=/opt/apache-tomcat-7.0.92
 TOMCAT_WEB_DIR=$TOMCAT_HOME/webapps
-SOURCE_DIR=./target
+SOURCE_DIR=./dist
 
 echo "Stopping tomcat server"
 sudo bash $TOMCAT_HOME/bin/shutdown.sh > /dev/null 2>&1
