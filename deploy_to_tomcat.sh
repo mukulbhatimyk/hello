@@ -15,6 +15,8 @@ if [ $? -eq 0 ];
 fi
 
 echo "Deployment started ......"
+### Backup process
+
 sudo rm -rf Hello*
 sudo cp $SOURCE_DIR/*.war $TOMCAT_WEB_DIR
 
