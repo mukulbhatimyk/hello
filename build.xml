@@ -9,17 +9,17 @@
   <property name="src.home"     value="${basedir}/src"/>
   <property name="web.home"     value="${basedir}/web"/>
   
-  <!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) 
-<property name="sonar.host.url" value="http://localhost:9000" />  -->
+ 
+<property name="sonar.host.url" value="http://35.200.237.204:9000" />  
   
-  <!-- Define the SonarQube project properties 
+
 <property name="sonar.projectKey" value="org.sonarqube:sonarqube-scanner-ant" />
 <property name="sonar.projectName" value="${app.name}" />
 <property name="sonar.projectVersion" value="${app.version}" />
 <property name="sonar.sources" value="${src.home}" />
 <property name="sonar.java.binaries" value="${work.home}" />
 <property name="sonar.sourceEncoding" value="UTF-8" />
--->
+
   
   <target name="help">
     <echo>You can use the following targets:</echo>
@@ -75,16 +75,14 @@
     </copy>
 
   </target>
- <!--
-    Define SonarQube Scanner for Ant Target 
+ 
  <target name="sonar" depends="compile">
     <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
-         Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder 
-        <classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-*.jar" />
-    </taskdef> -->
- 
-    <!-- Execute SonarQube Scanner for Ant Analysis -->
- <!-- <sonar:sonar />
+          
+        <!-- <classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-*.jar" /> -->
+    </taskdef>
+    
+ <sonar:sonar />
 </target> -->
   
 
