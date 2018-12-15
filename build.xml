@@ -83,7 +83,7 @@
     </taskdef>
     
  <sonar:sonar />
-</target> -->
+</target>
   
 
   <target name="dist" depends="compile"
