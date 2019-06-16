@@ -62,7 +62,10 @@
     <copy todir="${work.home}">
       <fileset dir="${web.home}"/>
     </copy>
-  </target>
+  </target>\
+  
+  
+  sadfgosdajfsldkfj
 
   <target name="compile" depends="prepare"
           description="Compile Java sources and copy to WEB-INF/classes dir">
